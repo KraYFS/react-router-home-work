@@ -24,7 +24,7 @@ const Product = () => {
       ) : (
         <h1>Product not found</h1>
       )}
-      <button onClick={() => navigate(-1)}>back</button>
+      <button onClick={() => navigate(-2)}>back</button>
     </div>
   )
 }
