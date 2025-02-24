@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
+import { productsId } from '../../data'
 
 const Products = () => {
-  const productsId = [{ id: 1 }, { id: 2 }, { id: 3 }]
   return (
     <div>
       <nav>
@@ -13,7 +13,7 @@ const Products = () => {
       <h1>Products</h1>
       {productsId.map(({ id }) => {
         return (
-          <h3>
+          <h3 key={id}>
             <Link to={`${id}`}>Product {id}</Link>
           </h3>
         )
