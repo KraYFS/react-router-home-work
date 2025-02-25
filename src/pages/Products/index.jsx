@@ -4,12 +4,6 @@ import { productsId } from '../../data'
 const Products = () => {
   return (
     <div>
-      <nav>
-        <Link to='/' style={{ marginRight: '10px' }}>
-          Home
-        </Link>
-        <Link to='/products'>Products</Link>
-      </nav>
       <h1>Products</h1>
       {productsId.map(({ id }) => {
         return (

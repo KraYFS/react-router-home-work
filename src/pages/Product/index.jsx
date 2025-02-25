@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { productsId } from '../../data'
 
 const Product = () => {
@@ -10,12 +9,6 @@ const Product = () => {
 
   return (
     <div>
-      <nav>
-        <Link to='/' style={{ marginRight: '10px' }}>
-          Home
-        </Link>
-        <Link to='/products'>Products</Link>
-      </nav>
       {product ? (
         <>
           <h1>Product detail</h1>
